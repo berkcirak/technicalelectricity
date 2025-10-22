@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,8 +18,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form gönderme işlemi burada yapılacak
-    alert('Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.');
+    
+    // Normal form gönderimi - sadece alert göster
+    alert(`Teşekkürler ${formData.name}! Mesajınız alındı. En kısa sürede size dönüş yapacağız.`);
+    
+    // Formu temizle
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -41,8 +44,7 @@ const Contact = () => {
               </div>
               <div>
                 <strong>Telefon</strong>
-                <p>+90 555 123 45 67</p>
-                <p>+90 212 123 45 67</p>
+                <p>+90 505 145 28 34</p>
               </div>
             </div>
             
@@ -53,7 +55,6 @@ const Contact = () => {
               <div>
                 <strong>E-posta</strong>
                 <p>info@elektrikustasi.com</p>
-                <p>destek@elektrikustasi.com</p>
               </div>
             </div>
             
@@ -63,8 +64,7 @@ const Contact = () => {
               </div>
               <div>
                 <strong>Adres</strong>
-                <p>Merkez Mahallesi, Elektrik Sokak No:123</p>
-                <p>Kadıköy/İstanbul</p>
+                <p>Gaziosmanpaşa/İstanbul</p>
               </div>
             </div>
             
@@ -74,10 +74,21 @@ const Contact = () => {
               </div>
               <div>
                 <strong>Çalışma Saatleri</strong>
-                <p>Pazartesi - Cuma: 08:00 - 18:00</p>
-                <p>Cumartesi: 09:00 - 16:00</p>
-                <p>Pazar: Acil durumlar için 7/24</p>
+                <p>Pazartesi - Cuma: 09:00 - 23:00</p>
               </div>
+            </div>
+
+            {/* WhatsApp Hızlı İletişim - Ayrı buton */}
+            <div className="whatsapp-contact">
+              <a 
+                href="https://wa.me/905051452834" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="whatsapp-btn"
+              >
+                <MessageCircle size={24} />
+                WhatsApp ile Hızlı İletişim
+              </a>
             </div>
           </div>
           
