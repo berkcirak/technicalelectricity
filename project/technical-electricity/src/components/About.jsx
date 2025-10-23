@@ -19,26 +19,22 @@ const About = () => {
           
           <div className="about-stats">
             <div className="stat">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">300+</span>
               <span className="stat-label">Tamamlanan Proje</span>
             </div>
             <div className="stat">
               <span className="stat-number">15</span>
               <span className="stat-label">Yıl Deneyim</span>
             </div>
-            <div className="stat">
-              <span className="stat-number">24/7</span>
-              <span className="stat-label">Acil Hizmet</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Müşteri Memnuniyeti</span>
-            </div>
           </div>
         </div>
         
         <div className="about-image">
-          <Wrench size={120} />
+          <img 
+            src="/images/about/about.jpg" 
+            alt="Profesyonel Elektrikçi"
+            className="about-photo"
+          />
         </div>
       </div>
     </section>

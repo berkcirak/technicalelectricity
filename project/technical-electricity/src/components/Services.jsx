@@ -1,44 +1,44 @@
 import React from 'react';
 import { 
-  Home, 
   Wrench, 
   Lightbulb, 
-  Shield, 
-  Zap, 
-  Settings 
+  Satellite, 
+  Camera, 
+  RefreshCw, 
+  Shield 
 } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Home size={40} />,
-      title: "Ev Elektrik Tesisatı",
-      description: "Yeni ev elektrik tesisatı, tamir ve bakım hizmetleri. Güvenli ve modern çözümler."
+      title: "Arıza Tespiti & Onarımı",
+      description: "Elektrik arızalarının hızlı tespiti ve profesyonel onarımı. 7/24 acil müdahale hizmeti.",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop"
+
     },
     {
-      icon: <Wrench size={40} />,
-      title: "Elektrik Arıza Tamiri",
-      description: "Tüm elektrik arızalarında hızlı ve güvenilir tamir hizmeti. 7/24 acil müdahale."
+      title: "Avize & Aydınlatma Montajı",
+      description: "Modern avize montajı, LED aydınlatma sistemleri ve dekoratif ışık kurulumu.",
+      image: "images/services/aydinlatma.jpeg"
     },
     {
-      icon: <Lightbulb size={40} />,
-      title: "Aydınlatma Sistemleri",
-      description: "LED aydınlatma, spot ışık, dekoratif aydınlatma sistemleri kurulumu."
+      title: "Merkezi Uydu Sistemleri",
+      description: "Uydu anten kurulumu, merkezi uydu sistemleri ve sinyal güçlendirme hizmetleri.",
+      image: "images/services/merkeziuydu.jpeg"
     },
     {
-      icon: <Shield size={40} />,
-      title: "Elektrik Güvenlik",
-      description: "Topraklama, parafudur, güvenlik sistemleri kurulumu ve bakımı."
+      title: "Diafon & Kamera Sistemleri",
+      description: "Güvenlik kameraları, diafon sistemleri ve akıllı güvenlik çözümleri kurulumu.",
+      image: "images/services/diafon.jpeg"
+    },    {
+      title: "Tesisat Yenileme",
+      description: "Eski elektrik tesisatlarının modernizasyonu ve güvenlik standartlarına uygun yenileme.",
+      image: "images/services/tesisat.jpeg"
     },
     {
-      icon: <Zap size={40} />,
-      title: "Elektrik Panosu",
-      description: "Elektrik panosu kurulumu, bakımı ve modernizasyonu hizmetleri."
-    },
-    {
-      icon: <Settings size={40} />,
-      title: "Elektrik Bakım",
-      description: "Düzenli elektrik bakım hizmetleri ile güvenli ve verimli sistemler."
+      title: "Hızlı Güvenli ve Uygun Fiyatlı Hizmet",
+      description: "Kaliteli işçilik, güvenli çalışma ve uygun fiyat garantisi ile profesyonel hizmet.",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
     }
   ];
 
@@ -53,11 +53,20 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">
-              <div className="service-icon">
-                {service.icon}
+              <div className="service-image">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  loading="lazy"
+                />
+                <div className="service-overlay">
+                 
+                </div>
               </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           ))}
         </div>

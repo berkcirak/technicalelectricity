@@ -8,7 +8,7 @@ const Hero = () => {
         <h1>Profesyonel Elektrik Hizmetleri</h1>
         <p>
           Güvenilir, kaliteli ve hızlı elektrik çözümleri ile evinizi ve işyerinizi 
-          aydınlatıyoruz. 7/24 acil müdahale hizmeti.
+          aydınlatıyoruz..
         </p>
         <a href="#contact" className="cta-button">
           Hemen İletişime Geç
@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="hero-features">
           <div className="hero-feature">
             <Phone size={24} />
-            <span>7/24 Acil Müdahale</span>
+            <span>09.00 - 23.00</span>
           </div>
           <div className="hero-feature">
             <MapPin size={24} />
-            <span>Tüm İlçelerde Hizmet</span>
+            <span>İstanbul</span>
           </div>
           <div className="hero-feature">
             <Clock size={24} />
