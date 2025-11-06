@@ -5,16 +5,17 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-container">
-        <div className="about-content">
+        <article className="about-content">
           <h2>Hakkımızda</h2>
           <p>
             15 yıllık deneyimimizle elektrik sektöründe güvenilir hizmet sunuyoruz. 
             Müşteri memnuniyeti odaklı yaklaşımımız ve kaliteli işçiliğimizle 
-            binlerce projeyi başarıyla tamamladık.
+            aldığımız projeleri başarıyla tamamladık.
           </p>
           <p>
-            Lisanslı elektrikçi ekibimiz, modern teknoloji ve güvenlik standartlarına 
-            uygun çalışarak evinizin ve işyerinizin elektrik ihtiyaçlarını karşılıyor.
+            Teknik Elektrik olarak, ev sahiplerine ve işletmelere güvenilir ve kaliteli
+            elektrik tesisatı hizmetleri sunmaktayız. Deneyimli ve uzman ekibimizle,
+            her türlü elektrik tesisatı ihtiyacınızı karşılayabiliriz.
           </p>
           
           <div className="about-stats">
@@ -27,13 +28,14 @@ const About = () => {
               <span className="stat-label">Yıl Deneyim</span>
             </div>
           </div>
-        </div>
+        </article>
         
         <div className="about-image">
           <img 
             src="/images/about/about.jpg" 
-            alt="Profesyonel Elektrikçi"
+            alt="Teknik Elektrik - İstanbul'da 15 yıllık deneyimli profesyonel elektrikçi ekibi - Elektrik tesisatı ve arıza tamiri hizmetleri"
             className="about-photo"
+            loading="lazy"
           />
         </div>
       </div>
