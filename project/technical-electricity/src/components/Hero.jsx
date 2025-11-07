@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="hero-features">
           <div className="hero-feature">
             <Phone size={24} />
-            <span>09.00 - 23.00</span>
+            <span>08.00 - 23.00</span>
           </div>
           <div className="hero-feature">
             <MapPin size={24} />
-            <span>İstanbul</span>
+            <span>Eyüp, Yeşilpınar, İstanbul</span>
           </div>
           <div className="hero-feature">
             <Clock size={24} />

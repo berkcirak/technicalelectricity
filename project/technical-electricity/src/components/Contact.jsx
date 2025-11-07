@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
               <div>
                 <strong>Adres</strong>
-                <p>Gaziosmanpaşa/İstanbul</p>
+                <p>Eyüp, Yeşilpınar, İstanbul</p>
               </div>
             </div>
             
@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
               <div>
                 <strong>Çalışma Saatleri</strong>
-                <p>Her gün: 09:00 - 23:00</p>
+                <p>Her gün: 08.00 - 23.00</p>
               </div>
             </div>
 

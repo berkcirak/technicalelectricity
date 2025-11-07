@@ -46,7 +46,7 @@ const Footer = () => {
             </p>
             <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <MapPin size={16} />
-              Gaziosmanpaşa/İstanbul
+              Eyüp, Yeşilpınar, İstanbul
             </p>
           </div>
         </div>
